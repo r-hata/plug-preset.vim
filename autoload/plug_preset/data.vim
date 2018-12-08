@@ -45,4 +45,11 @@ let s:data['vim-javascript'] = {
   \ }
 " }}} End vim-javascript
 
+" vim-go {{{
+let s:data['vim-go'] = {
+  \ 'do': ':GoUpdateBinaries',
+  \ 'for': 'go'
+  \ }
+" }}} End vim-go
+
 let &cpo = s:save_cpo
