@@ -14,42 +14,38 @@ function! plug_preset#data#get(repository)
 	return get(s:data, name, {})
 endfunction
 
+
 " fzf {{{
 let s:data['fzf'] = {
   \ 'dir': '~/.fzf',
   \ 'do': './install --all'
   \ }
-" }}} End fzf
-
-" fzf.vim {{{
-let s:data['fzf.vim'] = {
-  \ 'on': 'Fzf'
-  \ }
-" }}} End fzf.vim
+" }}}
 
 " vim-toml {{{
 let s:data['vim-toml'] = {
   \ 'for': 'toml'
   \ }
-" }}} End vim-toml
+" }}}
 
 " html5.vim {{{
 let s:data['html5.vim'] = {
   \ 'for': 'html'
   \ }
-" }}} End html5.vim
+" }}}
 
 " vim-javascript {{{
 let s:data['vim-javascript'] = {
   \ 'for': 'javascript'
   \ }
-" }}} End vim-javascript
+" }}}
 
 " vim-go {{{
 let s:data['vim-go'] = {
   \ 'do': ':GoUpdateBinaries',
   \ 'for': 'go'
   \ }
-" }}} End vim-go
+" }}}
+
 
 let &cpo = s:save_cpo
