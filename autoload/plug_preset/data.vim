@@ -47,5 +47,11 @@ let s:data['vim-go'] = {
   \ }
 " }}}
 
+" colorizer {{{
+let s:data['colorizer'] = {
+  \ 'for': ['css', 'vim', 'scss'],
+  \ }
+" }}}
+
 
 let &cpo = s:save_cpo
