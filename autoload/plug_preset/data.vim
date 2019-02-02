@@ -15,41 +15,35 @@ function! plug_preset#data#get(repository)
 endfunction
 
 
-" fzf {{{
+" C {{{
+let s:data['colorizer'] = {
+  \ 'for': ['css', 'vim', 'scss'],
+  \ }
+" }}}
+" F {{{
 let s:data['fzf'] = {
   \ 'dir': '~/.fzf',
   \ 'do': './install --all'
   \ }
 " }}}
-
-" vim-toml {{{
-let s:data['vim-toml'] = {
-  \ 'for': 'toml'
-  \ }
-" }}}
-
-" html5.vim {{{
+" H {{{
 let s:data['html5.vim'] = {
   \ 'for': 'html'
   \ }
 " }}}
-
-" vim-javascript {{{
-let s:data['vim-javascript'] = {
-  \ 'for': 'javascript'
-  \ }
-" }}}
-
-" vim-go {{{
+" V {{{
 let s:data['vim-go'] = {
   \ 'do': ':GoUpdateBinaries',
   \ 'for': 'go'
   \ }
-" }}}
-
-" colorizer {{{
-let s:data['colorizer'] = {
-  \ 'for': ['css', 'vim', 'scss'],
+let s:data['vimproc.vim'] = {
+  \ 'do': 'make'
+  \ }
+let s:data['vim-toml'] = {
+  \ 'for': 'toml'
+  \ }
+let s:data['vim-javascript'] = {
+  \ 'for': 'javascript'
   \ }
 " }}}
 
